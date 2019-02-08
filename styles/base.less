@@ -1,0 +1,77 @@
+@import "syntax-variables";
+
+// PROGRAMMING
+.syntax--c,
+.syntax--js,
+.syntax--java {
+    // base color
+    color: @a;
+
+    .syntax--storage,
+    .syntax--keyword {
+        color: @c;
+    }
+
+    .syntax--numeric,
+    .syntax--string {
+        color: @b;
+    }
+}
+
+// HTML
+.syntax--html {
+    // base color
+    color: @c;
+
+    // values
+    .syntax--quoted,
+    .syntax--id {
+        color: @b;
+    }
+
+    // tags
+    .syntax--entity {
+        color: @a;
+    }
+}
+
+// CSS
+.syntax--css {
+    // base color
+    .syntax--property-name {
+        color: @a;
+    }
+
+    // values
+    .syntax--property-value {
+        color: @b;
+    }
+
+    // tags
+    .syntax--selector {
+        color: @c;
+    }
+}
+
+// punctuation
+.syntax--punctuation,
+.syntax--brace,
+.syntax--comma,
+.syntax--assignment,
+.syntax--delimiter {
+    color: white;
+}
+
+// comments
+.syntax--comment{
+    color: gray;
+}
+
+// selection
+.selection {
+    background-color: #444;
+}
+
+atom-text-editor {
+  background-color: #222;
+}

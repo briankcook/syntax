@@ -1,0 +1,49 @@
+{
+  "name": "brian-syntax",
+  "theme": "syntax",
+  "version": "0.0.1",
+  "description": "Colorful, contrasting syntax themes for Brian",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/brian-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "configSchema": {
+    "subtheme": {
+      "description": "Choose from one of the available subthemes",
+      "type": "string",
+      "default": "metro1",
+      "enum": [
+        {
+          "value": "metro1",
+          "description": "Metro 1"
+        },
+        {
+          "value": "metro2",
+          "description": "Metro 2"
+        },
+        {
+          "value": "metro3",
+          "description": "Metro 3"
+        },
+        {
+          "value": "vapor",
+          "description": "Vapor"
+        },
+        {
+          "value": "pastel",
+          "description": "Pastel"
+        },
+        {
+          "value": "vibrant",
+          "description": "Vibrant"
+        }
+      ]
+    }
+  },
+  "main": "./lib/main"
+}
